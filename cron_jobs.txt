@@ -1,0 +1,5 @@
+# Cron jobs for the backup tool.
+# Each non-empty line below is added to the user's crontab by 04_setup_cron.sh.
+# __TOOL_DIR__ is replaced with this folder's real path when the job is installed.
+# Runs the daily incremental backup every day at 2:10 PM (14:10).
+10 14 * * * /bin/bash "__TOOL_DIR__/incremental_backup.sh" >> "__TOOL_DIR__/backup.log" 2>&1

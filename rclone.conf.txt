@@ -1,0 +1,7 @@
+[gdrive]
+type = drive
+scope = drive
+chunk_size = 64M
+transfers = 4
+retries = 10
+timeout = 1m
